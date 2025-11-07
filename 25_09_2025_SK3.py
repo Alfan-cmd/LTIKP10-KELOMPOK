@@ -22,3 +22,18 @@ if user_input1 in student_info:
     print(f"Umur {user_input1} adalah {info['age']} dan prodinya adalah {info['major']}")
 else:
     print("Tidak Valid")
+
+def sapa(a):
+    print(f"Selamat datang di aplikasi VEGGIET {a}")
+    while True:
+        print("Mau pesan apa?\nA.Sayur\nB.Sayur\nC.Gajadi")
+        pilihanuser = input("A/B/C\nPilih : ").lower()
+        if "a" in pilihanuser:
+            print("Maaf sayur belum tersedia :(")
+            break
+        if "b" in pilihanuser:
+            print("Maaf sayur belum tersedia :(")
+            break
+        if "c" in pilihanuser:
+            break
+sapa("User")
